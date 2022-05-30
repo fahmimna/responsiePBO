@@ -79,7 +79,7 @@ public class ControllerTambah {
                 {
                     @Override
                     public void actionPerformed(ActionEvent e){
-                        int input =JOptionPane.showConfirmDialog(null, "Apa anda ingin menghapus Id Buah" + dataterpilih + " ?" , "Pilih Opsi...." , JOptionPane.YES_NO_CANCEL_OPTION);
+                        int input =JOptionPane.showConfirmDialog(null, "Apa anda ingin menghapus Id Barang" + dataterpilih + " ?" , "Pilih Opsi...." , JOptionPane.YES_NO_CANCEL_OPTION);
                         if(input==0){
                             gudang.deleteBarang(dataterpilih);
                             String dataKatalog[][]= gudang.readKatalog();
